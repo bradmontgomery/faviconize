@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <title>faviconize sample</title>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script> 
+  <script type="text/javascript" src="faviconize-min.js"></script>  
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $("ul#links li a").faviconize({
+        position: "before",
+        linkable: true,
+        defaultImage: "http://www.babylon-design.com/share/faviconize/external.gif",
+        className: "faviconize" 
+    });
+  });
+  </script>
+  <style type="text/css">
+    .faviconize { width: 16px; height: 16px; }
+  </style>
+</head>
+<body>
+<h1>faviconize</h1>
+<ul style="list-style-type:none" id="links"> 
+<li><a href="http://www.flickr.com/">Flickr</a></li> 
+<li><a href="http://github.com/">Github</a></li>
+<li><a href="http://stackoverflow.com/">Stack Overflow</a></li>
+<li><a href="http://www.google.com/">Google</a></li>
+<li><a href="http://www.yahoo.com/">Yahoo</a></li>
+<li><a href="http://www.wikipedia.com/">Wikip&eacute;dia</a></li>
+<li><a href="http://www.msn.com/">MSN</a></li>
+</ul> 
+</body>
+</html>
