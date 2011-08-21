@@ -12,29 +12,30 @@ Ask the CSS Guy (http://www.askthecssguy.com/2006/12/hyperlink_cues_with_favicon
 Examples
 --------
 
-For links like the following:
+For links like the following::
+
     <ul id="example"> 
-        <li><a href="http://www.google.com/">Google</a></li> 
-        <li><a href="http://www.yahoo.com/">Yahoo</a></li> 
-        <li><a href="http://www.wikipedia.com/">Wikip&eacute;dia</a></li> 
-        <li><a href="http://www.sitesansfavicon.tld/">Site sans favicon</a></li> 
-        <li><a href="http://www.msn.com/">MSN</a></li> 
+    <li><a href="http://www.google.com/">Google</a></li> 
+    <li><a href="http://www.yahoo.com/">Yahoo</a></li> 
+    <li><a href="http://www.wikipedia.com/">Wikip&eacute;dia</a></li> 
+    <li><a href="http://www.sitesansfavicon.tld/">Site sans favicon</a></li> 
+    <li><a href="http://www.msn.com/">MSN</a></li> 
     </ul> 
 
-Display the favicon before each link:
+Display the favicon before each link::
 
     $("ul#example a").faviconize({
         position: "before"
     });
     
-Display the favicon after each link, and inlucde an default image for links without a favicon:
+Display the favicon after each link, and inlucde an default image for links without a favicon::
 
     $("ul#example a").faviconize({
         position: "after",
         defaultImage: "external.gif"
     });  
 
-Make the favicon images clickable:
+Make the favicon images clickable::
 
     $("ul#example a").faviconize({
         position: "before",
@@ -42,7 +43,7 @@ Make the favicon images clickable:
         linkable: true
     });
 
-Give the favicon image a css class (so you can style it!):
+Give the favicon image a css class (so you can style it!)::
 
     $("ul#example a").faviconize({
         position: "before",
@@ -51,7 +52,7 @@ Give the favicon image a css class (so you can style it!):
         className: "faviconize"
     });
 
-Use an external default image, and provide exceptsions for certain links. These won't get a favicon displayed:
+Use an external default image, and provide exceptsions for certain links. These won't get a favicon displayed::
 
     $("ul#example a").faviconize({
         position: "before",
