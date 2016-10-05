@@ -17,7 +17,7 @@ For links like the following::
     <ul id="example"> 
     <li><a href="http://www.google.com/">Google</a></li> 
     <li><a href="http://www.yahoo.com/">Yahoo</a></li> 
-    <li><a href="http://www.wikipedia.com/">Wikip&eacute;dia</a></li> 
+    <li><a href="http://www.wikipedia.com/">Wikipedia</a></li> 
     <li><a href="http://www.sitesansfavicon.tld/">Site sans favicon</a></li> 
     <li><a href="http://www.msn.com/">MSN</a></li> 
     </ul> 
